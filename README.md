@@ -1,4 +1,4 @@
-#Simple to-do list application*
+# Simple to-do list application
 
 Main feature drag and drop UI. 
 You could drab and drop to-do to done todo box, or in backet if you want to delete todo.
