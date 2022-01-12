@@ -2,8 +2,10 @@
 
 ## Front end part of application
 
-  Main feature drag and drop UI. 
+  Main feature is drag and drop UI. 
+  
   You could drag and drop to-do to done box or bakc, or you could drag and drop it to backet if you want to delete todo.
+  
   User registration, authentication, authorization using jwt.
 
 
