@@ -1,0 +1,29 @@
+@use "../scssStyles//variables" as *;
+
+.container {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bucket-color;
+  color: $bright-color;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  transition: all 0.3s ease-in-out, color 0.1s ease-in-out;
+  filter: opacity(0);
+  &.show {
+    bottom: 0px;
+    right: 0px;
+    filter: opacity(1);
+  }
+  &.active {
+    background-color: $bucket-color-active;
+  }
+  img {
+    width: 80%;
+    color: $bright-color;
+  }
+}

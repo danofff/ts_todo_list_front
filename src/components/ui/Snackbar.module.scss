@@ -1,0 +1,42 @@
+@use "../../scssStyles//variables" as *;
+
+.snackbar {
+  max-width: 600px;
+  width: 100%;
+  color: $bright-color;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  position: absolute;
+  top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  box-shadow: 0px 0px 4px 2px $middle-grey-color;
+
+  &.active {
+    display: flex;
+  }
+  span {
+    color: inherit;
+  }
+  .content {
+    flex-grow: 1;
+    font-size: 1.25rem;
+  }
+  .button {
+    flex-basis: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &.default {
+    background-color: $snackbar-default;
+    color: $main-font-color;
+  }
+  &.error {
+    background-color: $snackbar-error;
+  }
+  &.success {
+    background-color: $snackbar-success;
+  }
+}

@@ -1,0 +1,29 @@
+@use "../scssStyles//variables" as *;
+@use "../scssStyles/mixins" as *;
+
+.form {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @media (min-width: 750px) {
+    max-width: 600px;
+  }
+
+  position: relative;
+  input {
+    @include input-style;
+    padding-right: 40px;
+  }
+  button {
+    width: 45px;
+    right: 0px;
+    height: 100%;
+    position: absolute;
+    outline: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    @include button-style;
+  }
+}

@@ -1,0 +1,29 @@
+@use "./variables" as *;
+
+@mixin input-style {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: $input-font-size;
+  border: 1px solid $main-color-scheme;
+  border-radius: 4px;
+  color: $main-font-color;
+  transition: all 0.1s ease-in-out;
+  &:focus {
+    background-color: rgba($main-color-scheme, 0.05);
+  }
+  &:focus-visible {
+    outline: $main-color-scheme auto 1px;
+  }
+}
+
+@mixin button-style {
+  text-transform: uppercase;
+  background-color: $main-color-scheme;
+  color: $bright-color;
+  border: none;
+  cursor: pointer;
+  &:active,
+  &:hover {
+    background-color: rgba($main-color-scheme, 0.75);
+  }
+}

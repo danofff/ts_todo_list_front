@@ -1,0 +1,21 @@
+$container-width: 1140px;
+
+$bucket-color: #dc143c;
+$bucket-color-active: #ff4500;
+$active-todo-container-color: #138808;
+$done-todo-container-color: #1338be;
+$bright-color: #fff;
+$todo-background-color: #ebeaea;
+$middle-grey-color: #ccc;
+$dark-grey-color: #82878d;
+$main-font-color: #444;
+$main-color-scheme: #d529d5;
+$reference-color: #9dbde0;
+
+$snackbar-default: #ffc106;
+$snackbar-error: $bucket-color-active;
+$snackbar-success: $active-todo-container-color;
+
+$media-width: 750px;
+
+$input-font-size: 1.25rem;

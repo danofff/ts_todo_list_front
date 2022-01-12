@@ -1,0 +1,9 @@
+@use "../../scssStyles/mixins" as *;
+
+.button {
+  @include button-style;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+}

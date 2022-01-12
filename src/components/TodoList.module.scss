@@ -1,0 +1,40 @@
+@use "../scssStyles//variables" as *;
+
+.container {
+  padding: 1rem;
+  border-radius: 1rem;
+  @media (max-width: 750px) {
+    margin-bottom: 2rem;
+  }
+  transition: background-color 0.1s ease-in-out;
+  &.activeTodos {
+    border: 2px solid $active-todo-container-color;
+    &.active {
+      background-color: rgba($active-todo-container-color, 0.15);
+    }
+    h2 {
+      color: $active-todo-container-color;
+    }
+  }
+
+  &.doneTodos {
+    border: 2px solid $done-todo-container-color;
+    &.active {
+      background-color: rgba($done-todo-container-color, 0.15);
+    }
+    h2 {
+      color: $done-todo-container-color;
+    }
+  }
+
+  h2 {
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}

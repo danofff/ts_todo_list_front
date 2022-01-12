@@ -1,0 +1,27 @@
+@use "../scssStyles/variables" as *;
+
+.item {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid $middle-grey-color;
+  border-radius: 0.5rem;
+  background-color: $todo-background-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &.active {
+    filter: opacity(0.5);
+  }
+  .text {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .time {
+    color: rgba($main-font-color, 0.6);
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+}
