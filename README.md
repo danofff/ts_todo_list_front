@@ -1,7 +1,7 @@
 # Simple to-do list application
 
 Main feature drag and drop UI. 
-You could drab and drop to-do to done todo box, or in backet if you want to delete todo.
+You could drag and drop to-do to done box or bakc, or you could drag and drop it to backet if you want to delete todo. \n
 User registration, authentication, authorization using jwt.
 
 
